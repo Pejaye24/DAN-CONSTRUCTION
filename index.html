@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAN Construction Company</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+        <li><text onclick="window.location.href ='services.html';">Services</text></li>
+        <li><text onclick="window.location.href ='featuredworks.html';">Featured Works</text></li>
+        <li><text onclick="window.location.href ='contact.html';">Contact</text></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to DAN : Design and Construction!</h1>
+    <p>Providing high-quality construction services since 2017.</p>
+  </section>
+
+  <section id="about">
+    <h3>About Us</h3>
+    <p>"WE ARE THE GROUP OF ENGINEERS AND ARCHITECTS"</p>
+    <p>Helping you decide and acquire the best DESIGN as your greatest investment.</p>
+    <button onclick="window.location.href ='aboutus.html';">Learn more</button>
+  </section>
+
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p> We build your home and provide you the best services that you can expect to be the best. </p>
+
+    <button onclick="window.location.href ='services.html';">Learn more</button>
+  </section>
+
+
+
+  <section id="whyus">
+    <h2>Why Us</h2>
+    <p>At DAN Construction, we pride ourselves on delivering exceptional service and unmatched quality. Here's why you
+      should choose us for your construction needs:</p>
+    <ul>
+      <li>Experience: With over 5 years of industry experience, we have a deep understanding of construction processes
+        and best practices.</li>
+      <li>Expert Team: Our team consists of highly skilled professionals who are dedicated to delivering projects on
+        time and within budget.</li>
+      <li>Quality Assurance: We prioritize quality at every stage, ensuring that our workmanship and materials exceed
+        your expectations.</li>
+      <li>Client Satisfaction: Customer satisfaction is our top priority. We strive to exceed client expectations and
+        build long-term relationships.</li>
+      <li>Reliability: We are known for our reliability and commitment to delivering projects with the utmost
+        integrity
+        and transparency.</li>
+
+    </ul>
+  </section>
+
+  <section id="videos">
+    <h2>OUR SAMPLE VIDEOS</h2>
+    <div>
+      <video width="400" height="300" controls loop>
+        <source src="sample vid 1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div>
+      <video width="400" height="300" controls loop>
+        <source src="sample vid 3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div>
+      <video width="400" height="300" controls loop>
+        <source src="sample vid 2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+
+
+  </section>
+
+
+  <footer>
+    <div class="footer">
+      <div class="main-footer">
+        <div class="footer-inner-content">
+          <h2>Office hours</h2>
+          <p>Monday - Saturday : 8:00AM - 5:00PM</p>
+          <p>Sunday : Day Off</p>
+        </div>
+
+        <div class="footer-inner-content center">
+          <h2>About us</h2>
+          <p>Helping you decide and acquire the best DESIGN as your greatest investment.</p>
+          <ul>
+            <p>Purok 4, Gumamela St., Cofradia Malolos, Malolos,
+              Philippines</p>
+          </ul>
+        </div>
+        <div class="important-links">
+          <h3>Connect with us</h3>
+          <ul>
+            <li><a style="text-decoration: none" href="contact.html"><img src="contactuslogo.png"
+                  alt="Contactus Logo">Contact us</a></li>
+            <li><a style="text-decoration: none" href="https://www.facebook.com/Dandesygnandkonstruct"
+                target="_blank"><img src="facebooklogo.png"
+                  alt="Facebook Logo">www.facebook.com/Dandesygnandkonstruct</a></li>
+            <li><a style="text-decoration: none" href="mailto:dandesygnandconstruct@outlook.com" target="_blank"><img
+                  src="emaillogo.png" alt="Email Logo">dandesygnandconstruct@outlook.com</a></li>
+            <li><a style="text-decoration: none" href="tel:+63 44 305 4528"><img src="telephonelogo.png"
+                  alt="Telephone Logo">+63 44 305 4528</a></li>
+            <li><a style="margin-left: 40px;" href="tel:+63 995-776-1582">+63 995-776-1582</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="additional-footer">
+    <p>&copy; 2023 DAN Construction. All rights reserved.</p>
+
+
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "johnpiolopascual0224@gmail.com",
+        Password: "pjpascual24",
+        To: 'johnpiolopascual0224@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "New Contact Form Enquiry",
+        Body: "Name: " + document.getElementById("name").value
+          + "<br> Email: " + document.getElementById("emai").value
+          + "<br> Message: " + document.getElementById("message").value
+      }).then(
+        message => alert("Message Sent Successfully")
+      );
+    }
+  </script>
+</body>
+
+</html>
